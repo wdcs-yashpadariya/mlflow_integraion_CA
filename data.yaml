@@ -1,0 +1,7 @@
+train : Y:/Webclues/mlflow/fire_dataset/images/train
+val : Y:/Webclues/mlflow/fire_dataset/images/valid
+
+nc : 1
+# Classes dictionary
+names:
+  0: fire

@@ -1,0 +1,15 @@
+artifact_uri: file:///Y:/Webclues/mlflow/Fire_detection_artifacts/079be03133944e579b47ac616c38c274/artifacts
+end_time: 1721368360575
+entry_point_name: ''
+experiment_id: '105222130270950090'
+lifecycle_stage: active
+run_id: 079be03133944e579b47ac616c38c274
+run_name: Fire_1
+run_uuid: 079be03133944e579b47ac616c38c274
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368260269
+status: 3
+tags: []
+user_id: HP
