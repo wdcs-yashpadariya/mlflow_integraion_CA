@@ -10,7 +10,7 @@ model_path = 'yolov5n6u.pt'
 model = YOLO(model_path)
 
 # Define training parameters
-epochs = 3
+epochs = 30
 batch_size = 32
 img_size = 640
 
@@ -20,15 +20,16 @@ mlflow.set_tracking_uri('http://127.0.0.1:5000')
 # uncooment expereiment_id when u run script very first time in your system 
 
 # experiment_id = mlflow.create_experiment(
-#     name="Fire_detection",
+#     name="YOLO_Fire_detection",
 #     artifact_location="Fire_detection_artifacts",
 #     tags={"env": "dev", "version": "1.0.0"},
 # )
 
-mlflow.set_experiment(experiment_name="Fire_detection")
+mlflow.set_experiment(experiment_name="YOLO_Fire_detection")
+
 
 # Start MLflow run
-with mlflow.start_run(run_name="Fire_2") as run:
+with mlflow.start_run(run_name="Fire_1",log_system_metrics=True) as run:
     # Log parameters
     mlflow.log_param("epochs", epochs)
     mlflow.log_param("batch_size", batch_size)
